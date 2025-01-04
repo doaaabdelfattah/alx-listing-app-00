@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <section className=" font-quicksand  w-full bg-[#222222] border-t-[29px]  border-primary-green min-h-fit">
-      <div className="mx-12 mt-12 pb-14 flex flex-col md:flex-row items-center justify-between text-[#CACACA] gap-10 lg:gap-20 border-b border-[#FFFFFF17]">
-        <div className="md:w-6/12 w-full flex flex-col gap-4">
+    <section className="font-quicksand  w-full bg-[#222222] border-t-[29px]  border-primary-green min-h-fit z-20 relative">
+      <div className="mx-10 mt-12 pb-14 flex flex-col md:flex-row items-center justify-between text-[#CACACA] gap-10 lg:gap-20 border-b border-[#FFFFFF17]">
+        <div className="md:w-6/12 mx-12 w-full flex flex-col gap-10">
           <Image
             src="/alxLogoWhite.svg"
-            width={50}
-            height={50}
+            width={70}
+            height={70}
             alt="alx logo"
           />
           <p className="text-left text-base text-[#CACACA] ">
@@ -20,7 +20,7 @@ const Footer = () => {
             any trip.
           </p>
         </div>
-        <div className="w-full md:w-6/12 py-10 flex items-start  justify-between gap-10">
+        <div className="w-full md:w-6/12 py-10 flex items-start  justify-between px-6 max-sm:grid max-sm:grid-cols-2 gap-10">
           {/* first Section =================== */}
           <div className="flex flex-col text-left gap-5">
             <h2 className="text-2xl font-semibold">Explore</h2>
